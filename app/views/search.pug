@@ -1,0 +1,19 @@
+include header
+
+div(class='wrap')
+  div(class='content')
+    header(class='site-header')
+      include site-header
+
+    div(class='container')
+      div(class='row')
+        div(class='col col-md-12')
+          h3(class='card-title text-center') Пошук по назві
+          input(class='search_text input1' type='text' maxlength='40')
+          button(class='btn btn-primary searchBut1') Пошук
+          h3(class='card-title text-center') Пошук по рокам
+          input(class='search_text input2' type='text' maxlength='40')
+          button(class='btn btn-primary searchBut2') Пошук
+          h3(class='card-title text-center') Пошук по жанрам
+    include nav
+  include footer

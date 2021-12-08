@@ -1,0 +1,89 @@
+* {
+    font-family: sans-serif;
+}
+
+.wrap {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.site-header {
+    height: auto;
+    padding: 20px 0;
+}
+
+.site-header h1{
+    display: inline-block;
+}
+
+.full-width {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.card {
+    border: 1px solid #dedede
+}
+
+.card-images {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    min-height: 150px;  
+}
+
+.buttonGen {
+    position: relative;
+    right: 20%;
+}
+
+.button-success {
+    position: relative;
+    left: 65%;
+}
+
+.success {
+    font-size: 120%;
+}
+
+.site_nav {
+    width: 300px;
+    min-height: 100vh;
+    left: -300px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    padding: 10px;
+    transition: all ease 1s;
+    color: #fff;
+}
+
+.close_button_div {
+    text-align: right;
+}
+
+.show_nav {
+    position: relative;
+}
+
+.nav_button{
+    width: 240px;
+    color: rgb(44, 16, 16);
+}
+
+.site_nav a{
+    color: rgb(44, 16, 16);
+}
+
+.search_text{
+    margin-bottom: 20px;
+}

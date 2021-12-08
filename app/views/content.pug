@@ -1,0 +1,33 @@
+include header
+
+div(class='wrap')
+ div(class='content')
+  header(class='site-header')
+   include site-header
+
+  div(class='container')
+   div(class='row')
+    div(class='col col-md-12')
+      h2(class="panel-title") #{content[0]['name']}
+    div(class="col col-md-4")
+      img(
+          src="image/"+content[0]['img']
+          class="goods-big-image"
+      )
+    div(class="col col-md-8")
+      p #{content[0]['description']}
+      span(class="success") Рік виходу: #{content[0]['date']}
+      button(
+           class="button-success add-to-fav"
+           data-content_id=content[0]['id']
+            ) to favorite
+      p(class="success") Оцінка користувачів: #{content[0]['rate']}
+
+      <button class="button-primary-outlined button-round">1</button>
+      <button class="button-primary-outlined button-round">2</button>
+      <button class="button-primary-outlined button-round">3</button>
+      <button class="button-primary-outlined button-round">4</button>
+      <button class="button-primary-outlined button-round">5</button>
+   include nav
+  include footer
+

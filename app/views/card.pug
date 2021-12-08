@@ -1,0 +1,17 @@
+div(class='col col-md-4')
+    div(class='card')
+        a(href='content?id='+val['id'])
+         h3(class='card-title text-center') #{val['name']}
+         img(
+            src='image/'+val['img']
+            class='card-images'
+            )
+         p(class='text-center') #{val['genre']}
+         ul(class="card-actions")
+          li
+          button(
+              class = 'buttonGen'
+            data-SM_id = val['id']
+          ) more
+
+          
